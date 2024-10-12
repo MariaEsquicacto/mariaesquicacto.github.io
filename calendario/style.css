@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #da9cca;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calendar-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px #0000001a;
+    width: 50%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header .month {
+    font-size: 18px;
+    font-weight: bold;
+}
+img{
+    width: 30px;
+    height: auto;
+}
+
+.calendar {
+    width: 100%;
+    text-align: center;
+}
+
+.calendar th, .calendar td {
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.calendar td:hover {
+    background-color: #e045ba;
+}
+.inactive {
+    color: #ccc;
+}
+
+.calendar th:first-child {
+    color: #df8fcb;
+}
+
+.calendar td:first-child {
+    color: #df8fcb;
+}
+
+.calendar th:last-child {
+    color: #df8fcb;
+}
+
+.calendar td:last-child {
+    color: #df8fcb;
+}
+
+/*calendar ... :first-child = primeira celula da linha fique na cor escolhida*/
+
+@media (max-width: 768px) {
+.calendar-header button {
+    padding: 8px 10px;
+    font-size: 12px;
+}
+
+.calendar-header .month {
+    font-size: 16px; 
+}
+
+.calendar th, .calendar td {
+    padding: 8px; 
+}
+}
+
+@media (max-width: 480px) {
+.calendar-header button {
+    padding: 6px 8px;
+    font-size: 10px;
+}
+
+.calendar-header .month {
+    font-size: 14px;
+}
+
+.calendar th, .calendar td {
+    padding: 6px; 
+}
+}
+
+@media (min-width: 1024px) {
+.calendar-container {
+    width: 50vw; 
+    max-width: 600px; 
+}
+
+.calendar-header button {
+    font-size: 16px; 
+    padding: 12px 20px;
+}
+
+.calendar-header .month {
+    font-size: 20px;
+}
+
+.calendar th, .calendar td {
+    padding: 12px;
+}
+}
