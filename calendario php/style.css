@@ -48,7 +48,7 @@ nav {
 #menu-opcoes {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 60px;
     right: 20px;
     width: 300px;
