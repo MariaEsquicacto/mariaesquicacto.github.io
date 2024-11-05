@@ -131,22 +131,26 @@ button:active {
 /* Responsividade */
 @media (max-width: 768px) {
     h1 {
+        font-family: Tahoma;
         font-size: 18px;
     }
     
     #instructions p,
     label {
         font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     button {
         padding: 10px 20px;
         font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     #resultado,
     #pontuacao {
         font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
@@ -156,26 +160,31 @@ button:active {
     }
 
     h1 {
+        font-family: Tahoma;
         font-size: 16px;
     }
 
     #instructions p,
     label {
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
     }
 
     select,
     input[type="number"] {
         font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     button {
         padding: 10px 15px;
         font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     #resultado,
     #pontuacao {
         font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
