@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: radial-gradient(circle, #1d1f20, #0f0f10);
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 3px solid #f9d342;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #f9d342;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #000;
+}
+
+
+#instructions p {
+    font-size: 14px;
+    color: #b0bec5;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+label {
+    display: block;
+    margin: 20px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #f9d342;
+    text-shadow: 1px 1px #000;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #495057;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #343a40;
+    color: #f9d342;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+    margin-top: 10px;
+}
+
+select:focus,
+input[type="number"]:focus {
+    border-color: #f9d342;
+    outline: none;
+}
+
+
+button {
+    padding: 12px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f9d342;
+    color: #212529;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    box-shadow: 0 4px #b8860b;
+}
+
+button:hover {
+    background-color: #ffc107;
+    transform: translateY(-3px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+
+#resultado {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f0ad4e;
+}
+
+#pontuacao {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #28a745;
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+}
+
+
+#jogar-novamente {
+    margin-top: 20px;
+    background-color: #17a2b8;
+    color: #ffffff;
+    box-shadow: 0 4px #117a8b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+    }
+    
+    #instructions p,
+    label {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    #resultado,
+    #pontuacao {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    #instructions p,
+    label {
+        font-size: 12px;
+    }
+
+    select,
+    input[type="number"] {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    #resultado,
+    #pontuacao {
+        font-size: 14px;
+    }
+}
