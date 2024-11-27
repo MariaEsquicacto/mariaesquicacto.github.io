@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondulatória</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="./imgs/fisica.png" alt="">
+                <li><a href="#section1">ONDAS ELETROMAGNÉTICAS</a></li>
+                <li><a href="#section2">ONDAS MECÂNICAS</a></li>
+                <li><a href="#section3">CARACTERÍSTICAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <h1>Ondas Eletromagnéticas</h1>
+            <div class="txt">
+                <p>Ondas eletromagnéticas, diferentemente das ondas mecânicas, não precisam de um meio para se propagar
+                    e apresentam velocidade muito alta, aproximadamente 3.10 m/s.
+                    <br><br>
+                    As ondas eletromagnéticas podem ser geradas por meio da oscilação de cargas elétricas de modo que a
+                    carga acelere em todos os pontos de sua trajetória, ou quando ocorrem transições de elétrons ligados
+                    a átomos e moléculas para estados energeticamente menores. As ondas geradas pelas oscilações são
+                    constituídas por um campo elétrico e um magnético perpendiculares em si.
+                </p>
+                <aside><img id="onda" src="./imgs/onda eletromagnetica.png" alt="Onda eletromagnética"> </aside>
+            </div>
+
+            <!-- simbolos do espectro -->
+            <section class="simbolos-conteiner">
+                <div class="simbolo radio"><img src="./imgs/simbolo - radio.png" alt=""></div>
+                <div class="simbolo micro-ndas"><img src="./imgs/simbolo - microondas.png" alt=""></div>
+                <div class="simbolo infravermelha"><img src="./imgs/simbolo - infravermelho.png" alt=""></div>
+                <div class="simbolo luz"><img src="./imgs/simbolo - luzvisivel.png" alt=""></div>
+                <div class="simbolo ultravioleta"><img src="./imgs/simbolo - ultravioleta.png" alt=""></div>
+                <div class="simbolo raiox"><img src="./imgs/simbolo - raiox.png" alt=""></div>
+                <div class="simbolo raiogama"><img src="./imgs/simbolo - raiogama.png" alt=""></div>
+            </section>
+
+            <!-- ondas do espectro -->
+            <section class="conteiner-espectro">
+                <div class="ondas radio"><button id="butonradio"><img src="./imgs/onda de radio.png" alt=""></button></div>
+                <div class="ondas micro-ondas"><button id="butonmicro"><img src="./imgs/onda de micro-ondas.png" alt=""></button></div>
+                <div class="ondas infravermelho"><button id="butoninfravermelho"><img src="./imgs/onda de infravermelha.png" alt=""></button></div>
+                <div class="ondas luz"><button id="butonluz"><img src="./imgs/onda de luz visivel.png" alt=""></button></div>
+                <div class="ondas ultravioleta"><button id="butonultravioleta"><img src="./imgs/onda de ultravioleta.png" alt=""></button></div>
+                <div class="ondas raiox"><button id="butonraiox"><img src="./imgs/onda de raiox.png" alt=""></button></div>
+                <div class="ondas raiog"><button id="butonraiog"><img src="./imgs/onda de raiogama.png" alt=""></button></div>
+            </section>
+
+            <section id="conteudoradio-modal" class="esconder">
+                <div class="ct">
+                <h3>Ondas de Rádio</h3>
+                <ul>
+                    <li><strong>O QUE É</strong></li>
+                </ul>
+                <p>As ondas de rádio são uma forma de radiação eletromagnética, que não transporta matéria, mas transporta energia.</p>
+                <ul>
+                    <li><strong>APLICAÇÕES</strong></li>
+                </ul>
+                <p>Elas são amplamente usadas em tecnologias de comunicação e outros campos, como:</p>
+                <p><span style="color: #4990c6;">COMUNICAÇÃO -> </span> Rádio FM e AM, Transmissões de televisão, Telefonia celular, Redes Wi-Fi, Comunicação por satélite.</p>
+                <P><span style="color: #4990c6;">NAVEGAÇÃO -> </span> Sistemas GPs, Radar.</P>
+
+                <ul>
+                    <li><strong>SAÚDE</strong></li>
+                </ul>
+                <p>As ondas de rádio têm aplicações significativas na área médica:</p>
+                <p><span style="color: #4990c6;">Ressonância Magnética: </span> para criar imagens detalhadas de órgãos internos</p>
+                <p><span style="color: #4990c6;">Radioterapia: </span> por ser uma onda de alta frequência são usadas para destruir células cancerígenas (embora mais comum com micro-ondas ou raios gama).</p>
+                <p><span style="color: #4990c6;">Monitores de sinais vitais: </span> equipamentos como monitores cardíacos podem usar ondas de rádio para transmitir dados.</p>
+                <div class="saude">
+                    <img src="./imgs/monitores de sinais vitais.jpg" alt=""><img src="./imgs/resonancia magnteica.jfif" alt="">
+                </div>
+                <ul>
+                    <li><strong>AMPLITUDE</strong></li>
+                </ul>
+                <div class="amplitude">
+                    <img src="./imgs/amplitude - onda de radio.png" alt="">
+                </div>
+                <ul>
+                    <li><strong>FREQUÊNCIA</strong></li>
+                </ul>
+                <p>3 kilohertz (3 kHz ou 3.10³ Hz) e 300 giga-hertz (300 Ghz ou 300.109 Hz)</p>
+                <ul>
+                    <li><strong>NÃO IONIZANTES</strong></li>
+                </ul>
+                <p>Ondas de rádio são não ionizantes e não afetam a saúde humana</p>
+                <div class="exemplo">
+                    <img src="./imgs/antena-radio.webp" alt=""> <img src="./imgs/exemplo - onda de radio.jpg" alt="">
+                </div>
+                </div>
+            </section>
+
+             <section id="conteudomicro-modal" class="esconder">
+                <div class="ct">
+                <h3>Ondas de micro-ondas</h3>
+                <ul>
+                    <li><strong>O QUE É</strong></li>
+                </ul>   
+                <p>O micro-ondas não é apenas um eletrodoméstico capaz de aquecer alimentos, ele tem o princípio de funcionamento na emissão de ondas eletromagnéticas de menor frequência que a luz, em uma faixa denominada de micro-ondas. </p>
+                <p>Durante a segunda guerra mundial era usados para detectar aviões (a fuselagem das aeronaves refletia ondas eletromagnéticas, tornando possível prever a aproximação de um possível inimigo.) </p>
+                <ul>
+                    <li><strong>APLICAÇÕES</strong></li>
+                </ul>  
+                <p>As micro-ondas têm uma variedade de usos em diferentes áreas:</p>
+                <p><span style="color: #4990c6;">COMUNICAÇÃO -> </span> Telefone celular, Wi-fi, Bluetooth, Transmissão via satélite</p>
+                <P><span style="color: #4990c6;">RADAR E NAVEGAÇÃO -> </span> GPS, Radar.</P>
+                <p><span style="color: #4990c6;">AQUECIMENTO -> </span> Forno de micro-ondas</p>
+                <P><span style="color: #4990c6;">RADIOTERAPIA E TRATAMENTOS MÉDICOS -> </span> Ressonância Magnética, Radioterapia e tratamentos médicos</P>
+                <ul>
+                    <li><strong>SAÚDE</strong></li>
+                </ul>  
+                <p>Embora as micro-ondas tenham muitos usos benéficos, elas também podem ter efeitos adversos se não forem controladas adequadamente:</p>
+                <p><span style="color: #4990c6;">Tratamentos médicos:</span> Em terapias de aquecimento profundo, micro-ondas podem ser usadas para tratar condições como dor muscular ou inflamação.
+                    Também são usadas em tratamentos de câncer, onde as micro-ondas podem ajudar a destruir células cancerígenas por aquecimento (chamado de hipertermia).</p>
+                <P><span style="color: #4990c6;">Riscos:</span> Se houver exposição excessiva e descontrolada a micro-ondas (em níveis muito elevados), elas podem aquecer os tecidos do corpo e causar danos. Por isso, dispositivos como fornos de micro-ondas domésticos são projetados para evitar vazamento de radiação.</P>
+                <div class="saude">
+                    <img src="./imgs/radioterapia.webp" alt="">
+                </div>
+                <ul>
+                    <li><strong>AMPLITUDE</strong></li>
+                </ul>  
+                <div class="amplitude">
+                    <img src="./imgs/onda de micro-ondas.png" alt="">
+                </div> 
+                <ul>
+                    <li><strong>FREQUÊNCIA</strong></li>
+                </ul>  
+                <p>O micro-ondas opera em 2.450 MHz</p>
+                <ul>
+                    <li><strong>NÃO IONIZANTE</strong></li>
+                </ul>  
+                <div class="exemplos">
+                    <img src="./imgs/microondas - exemplo.webp" alt=""><img src="./imgs/microondas.jfif" alt="">
+                </div>
+                </div>
+            </section>
+
+             <section id="conteudoinfravermelho-modal" class="esconder">
+               <div class="ct">
+                <h3>Ondas de Infravermelho</h3>
+                <ul>
+                    <li><strong>O QUE É</strong></li>
+                </ul> 
+                <p>As ondas infravermelhas pertencem ao “bloco” de ondas de frequência abaixo do espectro do visível. Esse tipo de frequência é muito utilizado como emissora de sinal eletrônico, como em controles remotos, e no funcionamento de câmeras noturnas, ou em modo noturno, que captam as ondas infravermelhas emitidas </p>
+                <ul>
+                    <li><strong>APLICAÇÕES</strong></li>
+                </ul> 
+                <p></p>
+                <p><span style="color: #4990c6;">AQUECIMENTO E CULINÁRIA -> </span> Lâmpada de aquecimento</p>
+                <P><span style="color: #4990c6;">COMUNICAÇÃO SEM FIO -> </span> Controle remotos</P>
+                <p><span style="color: #4990c6;">DETECTAÇÃO E SENSORES -> </span> Câmeras térmicas, sensores de movimento</p>
+                <P><span style="color: #4990c6;">ASTRONOMIA -> </span> Observação de corpos celestes</P>
+                <p><span style="color: #4990c6;">DEFESA E SEGURANÇA -> </span> Visão noturna, dispositivos de detecção</p>
+                <P><span style="color: #4990c6;">MEIO AMBIENTE -> </span> Monitoramento ambiental, sensores de qualidade do ar</P>
+                <ul>
+                    <li><strong>SAÚDE</strong></li>
+                </ul> 
+                <p>As ondas infravermelhas têm várias aplicações na saúde, principalmente devido à sua capacidade de gerar calor e interagir com os tecidos humanos. Elas são usadas principalmente para tratamentos terapêuticos e diagnóstico.</p>
+                <p><span style="color: #4990c6;">Terapia de aquecimento:</span> Fisioterapia e reabilitação: Terapias de aquecimento com infravermelho são comumente usadas em tratamentos de fisioterapia, como no tratamento de lesões crônicas (ex.: artrite, bursite) ou após lesões agudas, para reduzir a rigidez muscular e aliviar a dor</p>
+                <P><span style="color: #4990c6;">Tratamentos estéticos:</span> Tratamentos de rejuvenescimento da pele: A radiação infravermelha pode estimular a produção de colágeno e elastina, substâncias essenciais para manter a firmeza e elasticidade da pele, promovendo o rejuvenescimento facial e a redução de rugas.</P>
+                <P><span style="color: #4990c6;">Tomografia infravermelha:</span> A termografia infravermelha é útil para identificar inflamações, infecções e até mesmo tumores. Diferentes condições médicas, como infecções ou problemas circulatórios, podem causar diferenças de temperatura no corpo, que podem ser detectadas por câmeras infravermelhas.</P>
+                <div class="saude">
+                    <img src="./imgs/tomografia infravermelha.jfif" alt=""><img src="./imgs/tratamento estetico infravermelho.jfif" alt="">
+                </div>
+                <ul>
+                    <li><strong>AMPLITUDE</strong></li>
+                </ul> 
+                <div class="amplitude">
+                    <img src="./imgs/onda de infravermelha.png" alt="">
+                </div>
+                <ul>
+                    <li><strong>FREQUÊNCIA</strong></li>
+                </ul> 
+                <p>Frequências desde 1011 Hz até 1014 Hz, aproximadamente</p>
+                <ul>
+                    <li><strong>NÃO É IONIZANTE</strong></li>
+                </ul> 
+                <div class="exemplo">
+                    <img src="./imgs/exemplo - infravermelho.webp" alt=""><img src="./imgs/controle remoto.jfif" alt="">
+                </div>
+             </div>
+            </section>
+
+             <section id="conteudoluz-modal" class="esconder">
+                <div class="luzvisivel">
+
+                    <div class="bolas">
+                        <section id="circulos">
+                            <div class="circulo1" onclick="showContent('vermelho')"></div>
+                            <div class="circulo2" onclick="showContent('laranja')"></div>
+                            <div class="circulo3" onclick="showContent('amarelo')"></div>
+                            <div class="circulo4" onclick="showContent('verde')"></div>
+                        </section>
+                        <section id="circulos">
+                            <div class="circulo5" onclick="showContent('azul claro')"></div>
+                            <div class="circulo6" onclick="showContent('azul')"></div>
+                            <div class="circulo7" onclick="showContent('violeta')"></div>
+                        </section>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <p id="modalText">Conteúdo do modal</p>
+                            </div>
+                        </div>
+    
+                        <section id="olho">
+                            <img src="./imgs/icons8-olho-64.png" alt="Ícone de olho">
+                        </section>
+                    </div>
+                    <div class="conteudo">
+                        <h2>A onda eletromagnética que enxergamos</h2>
+                        <p>No vácuo, sabemos que a luz visível, como toda onda eletromagnética, pode viajar a uma velocidade
+                            de aproximadamente 3.108 m/s e é a única que o olho humano pode detectar, sendo também
+                            denominada de espectro visível, compreendendo um pequeno intervalo de espectro eletromagnético.
+                            A luz visível é formada por infinitas cores, e cada cor possui uma determinada frequência. A
+                            detecção dessas ondas juntas forma a luz branca, onde surge a expressão de que o branco é a
+                            junção de todas as cores juntas.</p>
+                        <section id="video">
+                            <p><a href="https://youtu.be/LlKeTEzYrjo?feature=shared" target="_blank">Se interessou? Que tal
+                                    assistir um vídeo e aprender um experimento!</a></p>
+                        </section>
+                    </div>
+                </div>
+
+             </section>
+
+             <section id="conteudoultravioleta-modal" class="esconder">
+                <div class="ct">
+                <h3>Ondas Ultravioleta</h3>
+                <ul>
+                    <li><strong>O QUE É</strong></li>
+                </ul>
+                <p>A radiação ultravioleta possui uma faixa de frequência entre a luz visível e os raios X e pode ser subdividida em UVA, UVB, UVC, não sendo visíveis a olho nu. Em maior parte emitida pelo Sol, pode nos causar sérios problemas de saúde, como envelhecimento precoce, problemas de visão, câncer de pele, entre outros malefícios. Por isso, a precaução por meio da utilização de protetores solares nos horários em que são mais intensos, entre outros fatores. </p>
+                <ul>
+                    <li><strong>APLICAÇÕES</strong></li>
+                </ul>
+                <p><span style="color: #4990c6;">CIÊNCIAS E PESQUISA -> </span> Microscopia fluorescente</p>
+                <P><span style="color: #4990c6;">SEGURANÇA -> </span> Iluminação forense</P>
+                <p><span style="color: #4990c6;">BELEZA E LAZER -> </span> Bronzeamento artificial</p>
+                <P><span style="color: #4990c6;">AGRICULTURA -> </span> Estimulação de crescimento, controle de pragas</P>
+                <div class="aplicacao">
+                    <img src="./imgs/bronzeamento artificial.jfif" alt=""><img src="./imgs/controle de pragas.png" alt="">
+                </div>
+                <ul>
+                    <li><strong>SAÚDE</strong></li>
+                </ul>
+                <p>As ondas ultravioleta (UV) têm diversas aplicações na área da saúde devido às suas propriedades únicas. Contudo, seu uso requer cuidado, pois a exposição inadequada pode causar danos à pele e aos olhos</p>
+                <p><span style="color: #4990c6;">Produção de Vitamina D: </span> UVB (280-315 nm): Estimula a produção de vitamina D na pele, essencial para a saúde óssea e o funcionamento do sistema imunológico.
+                    <strong>Benefícios:</strong> Prevenção de doenças como osteoporose e raquitismo.
+                    <strong>Recomendações:</strong> Exposição moderada ao sol para evitar riscos à saúde</p>
+                <P><span style="color: #4990c6;">Tratamento de Doenças de Pele: </span> <strong>Psoríase e Vitiligo:</strong> Terapias baseadas em UVB (fototerapia) ajudam a reduzir inflamações e estimular a repigmentação da pele.
+                    <strong>Eczema e acne:</strong> Algumas condições dermatológicas podem ser tratadas com luz UV controlada.</P>
+                <P><span style="color: #4990c6;">Riscos e Precauções: </span> <strong>Riscos:</strong> Exposição prolongada pode causar queimaduras, envelhecimento precoce, câncer de pele e danos aos olhos.
+                    <strong>Proteção:</strong> Uso de protetor solar, óculos escuros e roupas adequadas é essencial para evitar danos.</P>
+                <div class="saude">
+                    <img src="./imgs/vitamina d.jfif" alt=""><img src="./imgs/tratamento ultravioleta.jfif" alt="">
+                </div>
+                <ul>
+                    <li><strong>AMPLITUDE</strong></li>
+                </ul>
+                <div class="amplitude">
+                    <img src="./imgs/onda de ultravioleta.png" alt="">
+                </div>
+                <ul>
+                    <li><strong>FREQUÊNCIA</strong></li>
+                </ul>
+                <p>Apresenta uma elevada frequência, de no máximo 1018 Hz.</p>
+                <ul>
+                    <li><strong>IONIZANTE</strong></li>
+                </ul>
+                <p>Radiação ionizante é um tipo de radiação que contém energia suficiente para ionizar átomos, ou seja, arrancar-lhes elétrons. Ela pode causar malefícios à saúde.</p>
+                <div class="exemplo">
+                    <img src="./imgs/exemplo - ultravioleta.png" alt="">
+                </div>
+                <div class="tiposultravioleta">
+                    <section id="retangulo">
+                        <div class="retanguloUVA" onclick="mostrarContent('pourple')">UVA</div>
+                        <div class="retanguloUVB" onclick="mostrarContent('roxo')">UVB</div>
+                        <div class="retanguloUVC" onclick="mostrarContent('azul')">UVC</div>
+                    </section>
+                    <div id="modalretangulo" class="modalretangulo">
+                        <div class="modal-contentr">
+                            <span class="fechar" onclick="fecharModal()">&times;</span>
+                            <p id="modalTextRetangulo">Conteúdo do modal</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+            </section>
+
+             <section id="conteudoraiox-modal" class="esconder">
+                <div class="ct">
+                <h3>Ondas de Raio X</h3>
+                <ul>
+                    <li><strong>O QUE É</strong></li>
+                </ul>
+                <p>Têm a capacidade de interagir com estruturas nucleares. Ao interagir com o corpo humano, parte dessa radiação é absorvida, o que permite a realização de exames de imagem e explica o motivo pelo qual os técnicos em radiologia se ‘escondem’ na hora de realizar exames. </p>
+                <p>Como qualquer outra onda eletromagnética, eles estão sempre sujeitos aos fenômenos da refração, reflexão, difração, polarização e interferência.</p>
+                <p>Vale lembrar que esse raio possui ações benéficas e maléficas. A exposição demorada a esse raio pode causar sérios danos à saúde, como lesões cancerígenas, morte de células, leucemia, entre outros.</p>
+                <ul>
+                    <li><strong>APLICAÇÕES</strong></li>
+                </ul>
+                <p><span style="color: #4990c6;">INDÚSTRIA -> </span> Inspeção de materiais, como nos aeroportos</p>
+                <P><span style="color: #4990c6;">CIÊNCIA E PESQUISA -> </span> Análise de materiais, esterilização </P>
+                <div class="aplicacao">
+                    <img src="./imgs/raio x nos aeroportos.jfif" alt="">
+                </div>
+                <ul>
+                    <li><strong>SAÚDE</strong></li>
+                </ul>
+                <p><span style="color: #4990c6;">Radiografia: </span> São usadas para identificar fraturas ósseas, luxações, cáries dentárias, infecções pulmonares (como pneumonia) e outras condições.</p>
+                <P><span style="color: #4990c6;">Mamografia: </span> Um exame específico de raios X usado para a detecção precoce de câncer de mama.</P>
+                <p><span style="color: #4990c6;">Tomografia Computadorizada (TC): </span> Combina raios X com processamento digital para criar imagens detalhadas e em 3D de órgãos, tecidos e ossos.</p>
+                <P><span style="color: #4990c6;">Radioterapia: </span> Raios X de alta energia são utilizados para tratar cânceres ao destruir células tumorais.</P>
+                <div class="saude">
+                    <img src="./imgs/radiografia.jfif" alt=""><img src="./imgs/tomografia cmputadorizada.jpg" alt="">
+                </div>
+                <ul>
+                    <li><strong>AMPLITUDE</strong></li>
+                </ul>
+                <div class="amplitude">
+                    <img src="./imgs/onda de raiox.png" alt="">
+                </div>
+                <ul>
+                    <li><strong>FREQUÊNCIA</strong></li>
+                </ul>
+                <P>Varia entre 3,1016 Hz e 3,1019 Hz</P>
+                <ul>
+                    <li><strong>ONDAS IONIZANTE</strong></li>
+                </ul>
+                <div class="exemplo">
+                    <img src="./imgs/exemplo - ondas de raiox.jpg" alt=""><img src="./imgs/ondas de raiox - exemplo.jfif" alt="">
+                </div>
+                
+            </div>
+            </section>
+
+             <section id="conteudoraiog-modal" class="esconder">
+                <div class="ct">
+                <h3>Ondas de Raio Gama</h3>
+                <ul>
+                    <li><strong>O QUE É</strong></li>
+                </ul>
+                <p>São ondas eletromagnéticas de altíssima energia, podendo ser milhões de vezes mais energéticos que os raios ultravioletas. Esse tipo de onda é gerado no interior de núcleos atômicos instáveis e, por sua alta penetrabilidade, só pode ser barrado por placas espessas de chumbo ou concreto. 
+
+                    Apesar de ser tão energético, de frequência elevada, possui aplicação na medicina por reagir com células, permitindo seu uso para tratamentos de tumores, o que conhecemos como radioterapia </p>
+                <ul>
+                    <li><strong>APLICAÇÕES</strong></li>
+                </ul>
+                <p><span style="color: #4990c6;">ENERGIA E PESQUISA NUCLEAR -> </span> Monitoramento de Reatores Nucleares, estudo de elementos radioativos</p>
+                <P><span style="color: #4990c6;">APLICAÇÕES MILITARES -> </span> Pesquisa em armas nucleares, incluindo a análise da radiação gama gerada durante explosões atômicas.</P>
+                <div class="aplicacao">
+                    <img src="./imgs/monitoramento de reatores.webp" alt="">
+                </div>
+                <ul>
+                    <li><strong>SAÚDE</strong></li>
+                </ul>
+                <p>É empregada na higienização de equipamentos e alimentos, radioterapia, tomografia por emissão de pósitrons e na cirurgia Gamma Knife</p>
+                <p>As ondas gama desempenham um papel crucial em várias áreas da saúde, desde o diagnóstico precoce de doenças até o tratamento de câncer e a esterilização de materiais médicos. Contudo, seu uso deve ser cuidadosamente monitorado devido ao potencial de dano celular.</p>
+                <div class="saude">
+                    <img src="./imgs/radiacao-na-medicina-tipos-exames-medicina-nuclear.webp" alt="">
+                </div>
+                <ul>
+                    <li><strong>AMPLITUDE</strong></li>
+                </ul>
+                <div class="amplitude">
+                    <img src="./imgs/onda de raiogama.png" alt="">
+                </div>
+                <ul>
+                    <li><strong>FREQUÊNCIA</strong></li>
+                </ul>
+                <p>Superior a 1018 Hz</p>
+                <ul>
+                    <li><strong>ONDA IONIZANTE</strong></li>
+                </ul>
+                <div class="exemplo">
+                    <img src="./imgs/explosao de raios gama.jfif" alt=""><img src="./imgs/exemplo - gama.webp" alt="">
+                </div>
+            </div>
+               </section>
+            
+        </section>
+
+        <section id="section2">
+            <h1>Ondas Mecânicas</h1>
+            <div class="txt">
+                <p>Onda mecânica é uma perturbação que se propaga em um meio material e é capaz de transportar energia. 
+                    <br><br>
+                    As ondas mecânicas são vibrações ou perturbações no meio carregando energia. Essas ondas não carregam matéria e precisam de um meio para se propagar, diferentemente das ondas eletromagnéticas.
+                </p>
+                <aside id="ondamecanica"><img id="onda" src="./imgs/onda mecanica.png" alt="Onda eletromagnética"> </aside>
+            </div>
+            <div class="tiposmecanicas">
+                <h1 id="tipos">Classificação</h1>
+                <p>As ondas mecânicas podem ser classificadas de duas formas: em relação à sua direção de vibração e sua direção de propagação.</p>
+                <br>
+                <p>Com relação à direção de vibração, uma onda pode ser:</p>
+                <br>
+                <div class="imgtxt">
+                <img src="./imgs/tranversais.png" alt="">
+                <p><span style="color: #4990c6;">Transversais:</span> a vibração feita para produzir a onda é perpendicular (forma um ângulo de 90°) à sua propagação. Exemplo de onda transversal: uma pedra caindo em uma poça d’água.</p>
+                </div>
+                <div class="imgtxt">
+                <img src="./imgs/longitudinais.png" alt="">
+                <p><span style="color: #4990c6;">Longitudinais:</span> a vibração que produz a onda é paralela (mesma direção) à sua propagação. Exemplo de onda longitudinal: ondas sonoras.</p>
+                </div>
+                <br><br>
+                <p>Com relação à sua direção de propagação, uma pode ser:</p>
+                <br>
+                <div class="arrow-text">
+                <i class="fa-duotone fa-regular fa-arrow-right" style="--fa-primary-color: #1a63e0; --fa-secondary-color: #1a63e0;"></i>
+                <p><span style="color: #4990c6;">Unidimensional:</span> propaga-se apenas em uma única direção. Exemplo: uma corda de violão.</p>
+                </div>
+                <div class="arrow-text">
+                <i class="fa-duotone fa-regular fa-arrow-right" style="--fa-primary-color: #1a63e0; --fa-secondary-color: #1a63e0;"></i>
+                <p><span style="color: #4990c6;">Bidimensional:</span> propaga-se em até duas direções. Exemplo: uma pedra caindo em um lago.</p>
+                </div>
+                <div class="arrow-text">
+                <i class="fa-duotone fa-regular fa-arrow-right" style="--fa-primary-color: #1a63e0; --fa-secondary-color: #1a63e0;"></i>
+                <p><span style="color: #4990c6;">Tridimensional:</span> propaga-se em várias direções. Exemplo: uma onda sonora.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <h1>Características</h1>
+            <section class="wave-attributes">
+                <div class="attribute">
+                    <h4>Amplitude</h4>
+                    <p>A amplitude corresponde à altura da onda, marcada pela distância entre o ponto de equilíbrio (repouso) da onda até a crista. A crista representa o ponto máximo da onda, enquanto o vale é o ponto mínimo.</p>
+                </div>
+                <div class="attribute">
+                    <h4>Comprimento de Onda (λ)</h4>
+                    <p>O comprimento de onda é a distância entre dois vales ou duas cristas sucessivas. Representado pela letra grega λ, ele indica a extensão de um ciclo completo da onda.</p>
+                </div>
+                <div class="attribute">
+                    <h4>Velocidade (v)</h4>
+                    <p>A velocidade de uma onda depende do meio em que ela se propaga. Mudando de meio, a velocidade da onda pode variar. A velocidade é representada pela letra v.</p>
+                </div>
+                <div class="attribute">
+                    <h4>Frequência (f)</h4>
+                    <p>A frequência corresponde ao número de oscilações da onda em determinado intervalo de tempo, sendo medida em hertz (Hz). A frequência não depende do meio de propagação, apenas da fonte que gera a onda.</p>
+                </div>
+                <div class="attribute">
+                    <h4>Período (T)</h4>
+                    <p>O período é o tempo necessário para a onda completar um ciclo (comprimento de onda). A unidade de medida do período é o segundo (s).</p>
+                </div>
+                <div class="onda">
+                    <img src="./imgs/onda.webp" alt="">
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Ondas Eletromagnéticas. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
