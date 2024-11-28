@@ -1,0 +1,57 @@
+-- relatorios
+-- lista total de contagens por categorias
+SELECT 
+    categorias.nome_categoria,
+    SUM(contagens.qtd_contagem) AS total_contagens
+FROM 
+    projeto_contagem.categorias
+JOIN 
+    projeto_contagem.contagens
+ON 
+    categorias.id_categoria = contagens.categorias_id_categoria
+GROUP BY 
+    categorias.nome_categoria
+ORDER BY 
+    total_contagens DESC;
+
+    
+-- contagens cujo são maiores que 50
+SELECT 
+    id_contagem, created_contagem, qtd_contagem, categorias_id_categoria, usuarios_id_usuario
+FROM 
+    projeto_contagem.contagens
+WHERE 
+    qtd_contagem > 50;
+
+
+-- usuario e as fotos
+SELECT 
+    nome_usuario, foto_usuario
+FROM 
+    projeto_contagem.usuarios;
+
+
+
+-- relatorios com inner join 
+-- junção da criação, quantidade e o nome da categoria
+SELECT 
+    contagens.id_contagem,
+    contagens.created_contagem,
+    contagens.qtd_contagem,
+    categorias.nome_categoria
+FROM 
+    contagens
+INNER JOIN 
+    categorias ON contagens.categorias_id_categoria = categorias.id_categoria;
+    
+
+-- nome do usuario e a quantidade da contagem que eles realizaram 
+SELECT 
+    usuarios.nome_usuario, 
+    contagens.qtd_contagem
+FROM 
+    projeto_contagem.contagens
+INNER JOIN 
+    projeto_contagem.usuarios
+ON 
+    contagens.usuarios_id_usuario = usuarios.id_usuario;

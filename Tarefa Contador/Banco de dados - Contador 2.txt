@@ -1,0 +1,77 @@
+INSERT INTO `projeto_contagem`.`categorias` (`id_categoria`, `nome_categoria`) VALUES
+(1, 'Arduino'),
+(2, 'Senai'),
+(3, 'Personaliza'),
+(4, 'TRI'),
+(5, 'Robótica'),
+(6, 'Autorizados pela direção'),
+(7, 'Caça asteroídes'),
+(8, 'Para gabaritar'),
+(9, 'TA'),
+(10, 'Práticas investigativas'),
+(11, 'História'),
+(12, 'Literatura'),
+(13, 'Ciencias'),
+(14, 'Quimica'),
+(15, 'Física');
+
+select * from categorias;
+
+INSERT INTO `projeto_contagem`.`usuarios` (`id_usuario`, `nif_usuario`, `nome_usuario`, `email_usuario`, `senha_usuario`, `foto_usuario`) VALUES
+(1, '123456789', 'João Silva', 'joao@example.com', 'senha123', 'joao.jpg'),
+(2, '987654321', 'Maria Oliveira', 'maria@example.com', 'senha123', 'maria.jpg'),
+(3, '112233445', 'Pedro Santos', 'pedro@example.com', 'senha123', 'pedro.jpg'),
+(4, '556677889', 'Ana Costa', 'ana@example.com', 'senha123', 'ana.jpg'),
+(5, '998877665', 'Carlos Lima', 'carlos@example.com', 'senha123', 'carlos.jpg'),
+(6, '778899001', 'Paula Sousa', 'paula@example.com', 'senha123', 'paula.jpg'),
+(7, '667788990', 'José Almeida', 'jose@example.com', 'senha123', 'jose.jpg'),
+(8, '112211334', 'Clara Nunes', 'clara@example.com', 'senha123', 'clara.jpg'),
+(9, '334455667', 'Lucas Ribeiro', 'lucas@example.com', 'senha123', 'lucas.jpg'),
+(10, '556677123', 'Sofia Martins', 'sofia@example.com', 'senha123', 'sofia.jpg'),
+(11, '223344556', 'Ricardo Alves', 'ricardo@example.com', 'senha123', 'ricardo.jpg'),
+(12, '667788554', 'Juliana Carvalho', 'juliana@example.com', 'senha123', 'juliana.jpg'),
+(13, '445566778', 'Rafael Duarte', 'rafael@example.com', 'senha123', 'rafael.jpg'),
+(14, '112233997', 'Marina Lopes', 'marina@example.com', 'senha123', 'marina.jpg'),
+(15, '998877112', 'Fernando Dias', 'fernando@example.com', 'senha123', 'fernando.jpg');
+
+select * from usuarios;
+
+
+INSERT INTO `projeto_contagem`.`contagens` (`id_contagem`, `created_contagem`, `update_contagem`, `qtd_contagem`, `categorias_id_categoria`, `usuarios_id_usuario`) VALUES
+(1, NOW(), NULL, 10, 1, 1),
+(2, NOW(), NULL, 15, 2, 2),
+(3, NOW(), NULL, 20, 3, 3),
+(4, NOW(), NULL, 25, 4, 4),
+(5, NOW(), NULL, 30, 5, 5),
+(6, NOW(), NULL, 35, 6, 6),
+(7, NOW(), NULL, 40, 7, 7),
+(8, NOW(), NULL, 45, 8, 8),
+(9, NOW(), NULL, 50, 9, 9),
+(10, NOW(), NULL, 55, 10, 10),
+(11, NOW(), NULL, 60, 11, 11),
+(12, NOW(), NULL, 65, 12, 12),
+(13, NOW(), NULL, 70, 13, 13),
+(14, NOW(), NULL, 75, 14, 14),
+(15, NOW(), NULL, 80, 15, 15);
+
+select * from contagens;
+
+
+INSERT INTO `projeto_contagem`.`secoes` (`id_secao`, `nome_secao`) VALUES
+(1, '1 ano'),
+(2, '2 ano'),
+(3, '3 ano'),
+(4, '5 ano'),
+(5, '6 ano'),
+(6, '7 ano'),
+(7, '8 ano'),
+(8, '9 ano'),
+(9, '1 EM '),
+(10, '2 EM'),
+(11, '3 EM'),
+(12, 'Conclusão'),
+(13, 'Bibliografia'),
+(14, 'Prefácio'),
+(15, 'Início');
+
+select * from secoes;
